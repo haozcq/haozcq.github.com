@@ -88,65 +88,21 @@
 	</div>
 </div>
 
+
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
 <script type="text/javascript">
-var lastWindowWidth = 0;
-var lastWindowHeight = 0;
-var musicSeed = 0;
 $(function(){
      $(window).resize(function(){
-         if($(this).width() >= 0){
-         	 var _duration = Math.abs(lastWindowWidth - $(this).width()) + Math.abs(lastWindowHeight - $(this).height());
-         	 _duration = Math.min(_duration, 1000);
-         	 if(_duration < 50) {
-         	 	_duration = 0;
-         	 }
-         	 // TODO, fade animation when resize window
-         	 // else {
-
-	          //    $.backstretch(, {centeredX:false,speed: _duration});
-         	 // }
-         	 //$.backstretch("resize");
-             lastWindowWidth = $(this).width();
-             lastWindowHeight = $(this).height();
+         if($(this).width() >= 767){
+             $.backstretch("1.jpg", {speed: 150});
          }
       })
       .resize();//trigger resize on page load
 });
+</script>
 
-function toggleMuteMusic() {
-	if($("audio")[0].muted === true ) {
-		$("audio")[0].muted = false;
-		$("#music a img")[0].src = "volumeOn.png";
-	}
-	else {
-		$("audio")[0].muted = true;
-		$("#music a img")[0].src = "volumeOff.png";
-	}
-}
-
-function getBackgroundMusicName(seed) {
-	var index  = seed % playlist.length;
-	return playlist[index].name;
-}
-
-$( document ).ready(function() {
-	var d = new Date();
-	musicSeed = d.getTime();
-	$("audio")[0].src = encodeURI("music/haozcq/"+getBackgroundMusicName(musicSeed));
-	console.log(encodeURI("music/haozcq/"+getBackgroundMusicName(musicSeed)));
-	$("#music i").text(getBackgroundMusicName(musicSeed).replace(".mp3","") + " Music");
-	// shuffle slider image list
-	var imageList = ["http://7ktooa.com1.z0.glb.clouddn.com/1.jpg", 
-	 				].sort(function(){return .5 - Math.random();});
-	 $.backstretch(imageList, {centeredX:false, speed:1000});
-	 $.backstretch("pause");
-});
-
-function changeMusic() {
-	$("audio")[0].src = "music/haozcq/"+getBackgroundMusicName(++musicSeed);
-	$("#music i").text(getBackgroundMusicName(musicSeed).replace(".mp3","") + " Music");
-	$.backstretch("next");
-}
 
 // scripts for google analytics
 
