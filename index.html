@@ -1,60 +1,164 @@
+
 <!doctype html>
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>N.H.</title>
+	<title>浩儿</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta name="robots" content="all" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
 	<meta http-equiv="imagetoolbar" content="false" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="浩儿,haoer">
+	<meta name="description" content="浩儿的个人主页">
+	<meta name="baidu-site-verification" content="XXX" />
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->	
 	<style>
 		* { padding: 0; margin: 0; }
 		body { background-color: #333; }
-		p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
-		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
-		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
-		#about { width: 360px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
+		p  { color: rgba(0,0,0,0.5); font-family: "Helvetica","Microsoft YaHei", "微软雅黑"; font-size: 14px; line-height: 24px; margin-bottom: 14px; -webkit-font-smoothing: antialiased; }
+		h2 { color: rgba(0,0,0,0.5); font-family: "Helvetica","Microsoft YaHei", "微软雅黑"; font-size: 18px; margin-top: 14px; margin-bottom: 10px}
+		h1 { color: rgba(255,255,255,0.85); font-family: "Helvetica"; font-size: 55px; -webkit-font-smoothing: antialiased; }
+		a  { color: rgba(0,0,0,0.5); font-weight: bold; text-decoration: none; border-bottom: 2px solid rgba(0,0,0,0.5); }
+		a:hover { color: rgba(0,0,0,0.8); border-bottom: 2px solid rgba(0,0,0,0.8); }
+		#monogram { width: 50px; padding: 20px 0 0 0; margin: 0 auto 0 50px; }
+		#about {background-color: rgba(255,255,255,0.5); width: 480px; max-height: 60vh;padding: 20px; margin: 0px 50px 0px auto !important; overflow-y: auto; }
 		@media (max-width: 767px) {
 			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
-			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			#about { position: relative; width: auto;  padding: 20px; margin: 0 !important; }
 			background-image { opacity: 0.2; }
 		}
+		::-webkit-scrollbar {
+   			 width: 6px;
+		}
+ 
+		::-webkit-scrollbar-track {
+			background-color: rgba(0,0,0,0.1);
+		}
+ 
+		::-webkit-scrollbar-thumb {
+			background-color:rgba(177,0,129,0.5);
+		}
+		.copyright{text-align:center;max-width:600px;/*footer 的高度 */margin:0px auto} 
+		.copyright p,.copyright a{color: rgba(255,255,255,0.7);margin:0px; border-bottom: none;}
+		.copyright a:hover {color: rgba(255,255,255,0.8);}
+		#footer {position:absolute; bottom:0;width:100%;}
+		#music{float:left;width:auto;margin: 0px auto 0px 50px;}
+		#music a {text-decoration:none; font-weight: normal;font-family: "Georgia","Microsoft YaHei", "微软雅黑"; border-bottom:none}
 	</style>
+	<!--include jquery & backstretch-->
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+	<script type="text/javascript" src="music/playlist.js"></script>
+
 </head>	
     
 <body>
 
 <!-- swap out for a logo -->
+
 <div id="monogram">
-	<img src="monogram.png" />
+	<h1><em>Haoer<span style="font-weight:lighter;color:rgba(255,255,255,0.6)">.Net<span></em></h1>
 </div>
 
 <!-- swap out for information about yourself -->
-<div id="about">
-	<p>Naz Hamid is the founder and principal of <a href="http://weightshift.com">Weightshift</a>, a design studio in San Francisco and Chicago. Aside from client work, projects include the community-oriented site <a href="http://interhoods.org">Interhoods</a> and mobile web application, <a href="http://sitby.us">SitBy.Us</a>. The two projects codenamed <em>Suplex</em> and <em>Sleeperhold</em> are aiming to be launched in 2011.</p>
-	<p>He writes about design and tangential topics at <a href="http://weightshift.com/memo">Memo</a>, writes in 140 characters at <a href="http://twitter.com/weightshift">Twitter</a>, posts photos to <a href="http://flickr.com/absenter"/>Flickr</a>, creates 400x300px works-in-progress on <a href="http://dribbble.com/weightshift">Dribbble</a>, sometimes makes moving pictures on <a href="http://vimeo.com/weightshift">Vimeo</a>, records items of interest at <a href="http://svpply.com/weightshift">Svpply</a>, listens to all his music on <a href="http://www.rdio.com/people/weightshift/">Rdio</a> and answers the occasional question on <a href="http://www.quora.com/Naz-Hamid">Quora</a>. He also makes music as <a href="http://murdersandmysteries.com">Murders & Mysteries</a> and released an album in 2010.</p>
-	<p>A <a href="http://en.wikipedia.org/wiki/Third_culture_kid">third-culture kid</a>, Naz has lived on three continents and in three countries. He currently lives in San Francisco, California, a place where he feels comfortable in his own skin.</p> 
+<div id="about"> 
+	<p>您好！我白天是个民工，晚上就是个有抱负的演员，我住在天朝的雾都，想有条叫做 Jack 的狗。</p>
+	<p><a href = "https://bymindsite.wordpress.com/" target="_blank">Old blog</a>：
+	2008年奥运会期间建立的博客，想想直到现在都是在瞎折腾，是该静下心来干点自己的事情了。</p>
+	<p><a target="_blank" href = "http://weibo.com/haomicblog">微博主页</a>：
+	一般来说这里是自己吐槽的地方</p>
+	<p><a target="_blank" href = "http://chenyifaer.taobao.com/">Twitter</a>：
+	偶尔看看外面的世界</p>
+	<p><a target="_blank" href = "http://music.163.com/#/user/home?id=19570392">网易音乐</a>：直播时候的BGM歌单都在这里。</p>
+	<p><b>交流联系</b>：想说些什么，还是交朋友？欢迎邮件联系我：hello#haoer.net</p>
+	
 </div>
 
-<!--include jquery & backstretch-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<div id="footer">
+	<div id="music" style="text-align: center">
+		<audio autoplay loop src = "#"> </audio>
+		<a href="javascript:void(0)" onclick="toggleMuteMusic();" title="Volume" ><img style = "margin-bottom: 0px"id="volume" src="volumeOn.png" alt=""> </a><a href="javascript:void(0)" onclick="changeMusic()"><span style="text-shadow: 1px 1px 3px rgba(0,0,0,1); color: rgba(255,255,255,0.7);vertical-align: middle; line-height: normal;display: inline-block;margin-top:-17px"><i>dying in the sun</i></span></a>
+	</div>
+	<div class="copyright">
+		<p><em>© Created by <a href="http://www.haoer.net">Hao</a> 2016 Powered by <a href="https://github.com/weightshift/The-Personal-Page">The-Personal-Page</a></em></p>
+	</div>
+</div>
+
 <script type="text/javascript">
+var lastWindowWidth = 0;
+var lastWindowHeight = 0;
+var musicSeed = 0;
 $(function(){
      $(window).resize(function(){
-         if($(this).width() >= 767){
-             $.backstretch("nh_bg.jpg", {speed: 150});
+         if($(this).width() >= 0){
+         	 var _duration = Math.abs(lastWindowWidth - $(this).width()) + Math.abs(lastWindowHeight - $(this).height());
+         	 _duration = Math.min(_duration, 1000);
+         	 if(_duration < 50) {
+         	 	_duration = 0;
+         	 }
+         	 // TODO, fade animation when resize window
+         	 // else {
+
+	          //    $.backstretch(, {centeredX:false,speed: _duration});
+         	 // }
+         	 //$.backstretch("resize");
+             lastWindowWidth = $(this).width();
+             lastWindowHeight = $(this).height();
          }
       })
       .resize();//trigger resize on page load
 });
-</script>
 
+function toggleMuteMusic() {
+	if($("audio")[0].muted === true ) {
+		$("audio")[0].muted = false;
+		$("#music a img")[0].src = "volumeOn.png";
+	}
+	else {
+		$("audio")[0].muted = true;
+		$("#music a img")[0].src = "volumeOff.png";
+	}
+}
+
+function getBackgroundMusicName(seed) {
+	var index  = seed % playlist.length;
+	return playlist[index].name;
+}
+
+$( document ).ready(function() {
+	var d = new Date();
+	musicSeed = d.getTime();
+	$("audio")[0].src = encodeURI("music/haozcq/"+getBackgroundMusicName(musicSeed));
+	console.log(encodeURI("music/haozcq/"+getBackgroundMusicName(musicSeed)));
+	$("#music i").text(getBackgroundMusicName(musicSeed).replace(".mp3","") + " Music");
+	// shuffle slider image list
+	var imageList = ["https://c2.staticflickr.com/8/7720/16849991617_803e7143a2_h.jpg", 
+	 				"http://7tsz6h.com1.z0.glb.clouddn.com/imgnh_bg2.jpg",
+					"<img src="1.jpg" />",
+	 				].sort(function(){return .5 - Math.random();});
+	 $.backstretch(imageList, {centeredX:false, speed:1000});
+	 $.backstretch("pause");
+});
+
+function changeMusic() {
+	$("audio")[0].src = "music/haozcq/"+getBackgroundMusicName(++musicSeed);
+	$("#music i").text(getBackgroundMusicName(musicSeed).replace(".mp3","") + " Music");
+	$.backstretch("next");
+}
+
+// scripts for google analytics
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-37054944-2', 'auto');
+ga('send', 'pageview');
+</script>
 </body>	
 </html>
